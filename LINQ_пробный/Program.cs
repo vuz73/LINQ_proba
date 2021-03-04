@@ -33,8 +33,8 @@ namespace LINQ_пробный
             //        newlist.Add(line);
             //    }
             //}
-
-            var newlist = list.Where(x => !x.Contains("П"));
+            int i = 1;
+            var newlist = list.Select(x => $"{i++} {x}");
 
             Console.WriteLine(string.Join(Environment.NewLine, newlist) + "\n");
         }
