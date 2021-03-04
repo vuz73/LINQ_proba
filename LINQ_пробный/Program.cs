@@ -19,12 +19,7 @@ namespace LINQ_пробный
                 "Пятое" 
             };
 
-
-
-            //Array.Reverse(array);
-            //var newlist = list.Count();
-            //newlist = newlist.Skip(1);
-
+            #region Выборка без LINQ
             //var newlist = new List<string>();
             //foreach (string line in list)
             //{
@@ -33,10 +28,41 @@ namespace LINQ_пробный
             //        newlist.Add(line);
             //    }
             //}
-            int i = 1;
-            var newlist = list.Select(x => $"{i++} {x}");
+            //Console.WriteLine(string.Join(Environment.NewLine, newlist) + "\n");
+            #endregion
 
-            Console.WriteLine(string.Join(Environment.NewLine, newlist) + "\n");
+            #region Выборка LINQ
+            //var newlist = list.Where(x => x.Contains("Ч"));
+            //Console.WriteLine(string.Join(Environment.NewLine, newlist) + "\n");
+            #endregion
+
+            #region Реверс списка
+            //list.Reverse();
+            //Console.WriteLine(string.Join(Environment.NewLine, list) + "\n");
+            #endregion
+
+            #region Реверс списка с пропуском
+            //list.Reverse();
+            //var newlist = list.Skip(2);
+            //Console.WriteLine(string.Join(Environment.NewLine, newlist) + "\n");
+            #endregion
+
+            #region Количество элементов списка
+            //var newlist = list.Count();
+            //Console.WriteLine(string.Join(Environment.NewLine, newlist) + "\n"); 
+            #endregion
+
+            #region Нумерованный список LINQ
+            //int i = 1;
+            //var newlist = list.Select(x => $"{i++} {x}");
+            //Console.WriteLine(string.Join(Environment.NewLine, newlist) + "\n");
+            #endregion
+
+            #region MyRegion
+
+            #endregion
+
+
         }
     }
 }
