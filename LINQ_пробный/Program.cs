@@ -93,7 +93,6 @@ namespace LINQ_пробный
             //});
             #endregion
 
-
             #region Пинг нескольких сайтов одновременно
             //List<string> list = new List<string>
             //{
@@ -114,9 +113,6 @@ namespace LINQ_пробный
             //Console.WriteLine(string.Join(Environment.NewLine, newlist));
 
             #endregion
-
-
-
 
         }
     }
